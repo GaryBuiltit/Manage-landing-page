@@ -69,7 +69,7 @@
           >
             Bring everyone together to build better products
           </h1>
-          <p class="max-w-xs text-center text-darkGrayishBlue md:text-left">
+          <p class="max-w-sm text-center text-darkGrayishBlue md:text-left">
             Manage makes it simple for software teams to plan day-to-day task
             while keeping the larger team goals in view.
           </p>
@@ -93,14 +93,14 @@
     <!-- ********** Features Section ********* -->
     <section id="features">
       <div
-        class="container flex flex-col px-4 mx-auto mt-10 space-y-12 md:space-y-0 md:flex-row"
+        class="container flex flex-col px-4 mx-auto mt-10 space-y-6 md:space-y-0 md:flex-row"
       >
         <!-- whats different -->
         <div class="flex flex-col space-y-12 md:w-1/2">
           <h2 class="max-w-md text-4xl font-bold text-center md:text-left">
             What's different about Manage?
           </h2>
-          <p class="max-w-xs text-center text-darkGrayishBlue md:text-left">
+          <p class="max-w-sm text-center text-darkGrayishBlue md:text-left">
             Manage provides all the functionality your team needs, without the
             complexity. Our software is tailor-made for modern digital product
             teams.
@@ -108,7 +108,7 @@
         </div>
 
         <!-- numbered list  -->
-        <div class="flex flex-col space-x-8 md:w-1/2">
+        <div class="flex flex-col space-y-12 md:w-1/2">
           <!-- item 1 -->
           <div
             class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row"
@@ -207,7 +207,8 @@
         <div class="flex flex-col mt-24 md:flex-row md:space-x-20">
           <!-- testimonial 1 -->
           <div
-            class="testimonial1 flex flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:w-1/3"
+            id="test1"
+            class="test fade flex flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:w-1/3"
           >
             <img
               src="images/avatar-anisha.png"
@@ -223,7 +224,8 @@
           </div>
           <!-- testimonial 2 -->
           <div
-            class="testimonial2 hidden flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:w-1/3 md:flex"
+            id="test2"
+            class="test fade hidden flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:w-1/3 md:flex"
           >
             <img
               src="images/avatar-ali.png"
@@ -239,7 +241,8 @@
           </div>
           <!-- testimonial 3 -->
           <div
-            class="testimonial3 hidden flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:w-1/3 md:flex"
+            id="test3"
+            class="test fade hidden flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:w-1/3 md:flex"
           >
             <img
               src="images/avatar-richard.png"
@@ -255,7 +258,8 @@
           </div>
           <!-- testimonial 4 -->
           <div
-            class="testimonial4 hidden flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:w-1/3"
+            id="test4"
+            class="test fade hidden flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:w-1/3"
           >
             <img
               src="images/avatar-shanai.png"
@@ -275,10 +279,10 @@
           id="slide-btn"
           class="flex flex-row space-x-2 justify-center mt-5 md:hidden"
         >
-          <span class="dot1" onclick="showTest(1)"></span>
-          <span class="dot2" onclick="showTest(2)"></span>
-          <span class="dot3" onclick="showTest(3)"></span>
-          <span class="dot4" onclick="showTest(4)"></span>
+          <span id="dot1" class="dot bg-brightRed" onclick="showTest(1)"></span>
+          <span id="dot2" class="dot" onclick="showTest(2)"></span>
+          <span id="dot3" class="dot" onclick="showTest(3)"></span>
+          <span id="dot4" class="dot" onclick="showTest(4)"></span>
         </div>
 
         <!-- Button -->
@@ -334,7 +338,7 @@
             <!-- socials -->
             <div class="flex justify-center space-x-4">
               <!-- FB -->
-              <a href="#">
+              <a href="#" class="hover:bg-brightRed hover:bg-opacity-0">
                 <img src="images/icon-facebook.svg" alt="" class="h-8" />
               </a>
               <!-- IG -->

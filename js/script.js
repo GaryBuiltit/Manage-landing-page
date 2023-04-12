@@ -8,23 +8,15 @@ hamMenuBtn.addEventListener("click", () => {
 });
 
 function showTest(n) {
-  let i;
-  let testIndex = n - 1;
-  let selectedTest = document.getElementByClassName(
-    "testimonial" + testIndex.toString
-  );
-  let dot = document.getElementByClassName("dot" + testIndex.toString);
-  selectedTest.classList.toggle("flex");
-  dot.classList.toggle();
+  let selectedTest = document.getElementById("test" + n);
+  let clickedDot = document.getElementById("dot" + n);
+  let allDots = document.getElementsByClassName("dot");
 
-  // if (n > slides.length) {slideIndex = 1}
-  // if (n < 1) {slideIndex = slides.length}
-  // for (i = 0; i < slides.length; i++) {
-  //   slides[i].style.display = "none";
-  // }
-  // for (i = 0; i < dots.length; i++) {
-  //   dots[i].className = dots[i].className.replace(" active", "");
-  // }
-  // slides[slideIndex-1].style.display = "block";
-  // dots[slideIndex-1].className += " active";
+  for (let i = 1; i < allDots.length + 1; i++) {
+    document.getElementById("dot" + i).classList.remove("bg-brightRed");
+    document.getElementById("test" + i).classList.replace("flex", "hidden");
+  }
+
+  clickedDot.classList.add("bg-brightRed");
+  selectedTest.classList.replace("hidden", "flex");
 }

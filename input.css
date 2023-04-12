@@ -71,9 +71,12 @@ body {
   transform: rotate(-45deg) translateY(6px) translate(-6px);
 }
 
-.chosen,
+.chosen {
+  background: rgb(255, 81, 16);
+}
+
 #slide-btn span:hover {
-  background-color: rgb(255, 81, 16);
+  background: rgb(255, 81, 16);
 }
 
 #slide-btn span {
@@ -81,15 +84,22 @@ body {
   width: 10px;
   height: 10px;
   border-radius: 100%;
-  background: white;
   border-style: solid;
   border-width: 2px;
   border-color: rgb(255, 81, 16);
   outline-color: rgb(255, 81, 16);
 }
 
-/* .fade {
-  transition: ease-out;
+.fade {
   animation-name: fade;
   animation-duration: 1.5s;
-} */
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
