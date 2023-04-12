@@ -12,7 +12,7 @@ This is a solution to the [Manage landing page challenge on Frontend Mentor](htt
 
 ## Overview
 
-I created a landing page for a fake software company called Manage. The design was provided by frontendMentor.com and coded by me. Buttons do not lead to any other pages but shows active hover states. It is a responsive design that adjust to different screen sizes and changes testimonials into a slider on mobile devices.
+I created a landing page for a fake software company called Manage. The design was provided by frontendMentor.com and coded by me. Buttons do not lead to any other pages but shows active hover states. It is a responsive design that adjust to different screen sizes and changes testimonials into a slider on mobile devices. Creatd animations fr the hamburger menu and slider transitions on mobile devices.
 
 ### Screenshot
 
