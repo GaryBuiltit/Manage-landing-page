@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-image: url("../images/bg-tablet-pattern.svg"),
+    url("../images/bg-tablet-pattern.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 800px, 800px;
+  background-position: 90% -25%, -75% 70%;
+}
+
+#cta {
+  background-image: url("../images/bg-simplify-section-desktop.svg");
+}
+
+@media (max-width: 576px) {
+  body {
+    background-position: 50px -125px, 200px 400px;
+    background-size: 500px, 500px;
+  }
+
+  #cta {
+    background-image: url("../img/bg-simplify-section-mobile.svg");
+  }
+}
+
+.hambuger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+  position: relative;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background: black;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.hamburger-middle {
+  transform: translateY(7px);
+}
+
+.hamburger-bottom {
+  transform: translateY(14px);
+}
+
+.open {
+  transform: rotate(90deg);
+  transform: translateY(0px);
+}
+
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translate(6px);
+}
+
+.open .hamburger-middle {
+  display: none;
+}
+
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+
+.chosen,
+#slide-btn span:hover {
+  background-color: rgb(255, 81, 16);
+}
+
+#slide-btn span {
+  cursor: pointer;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background: white;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(255, 81, 16);
+  outline-color: rgb(255, 81, 16);
+}
+
+/* .fade {
+  transition: ease-out;
+  animation-name: fade;
+  animation-duration: 1.5s;
+} */
